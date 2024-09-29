@@ -9,7 +9,7 @@ body {
 header {
     background-color: #ff6347;
     color: white;
-    text-align: center;
+    text-align: left;
     padding: 15px;
 }
 
@@ -21,7 +21,7 @@ h1 {
 .store-tile {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: right;
     padding: 20px;
     background-color: #f7f7f7;
 }
@@ -59,8 +59,8 @@ h1 {
     position: absolute;
     top: 10px;
     left: 10px;
-    background-color: rgba(0, 0, 0, 0.6);
-    color: white;
+    background-color: rgb(255, 255, 255);
+    color: black;
     font-size: 24px;
     width: 40px;
     height: 40px;
@@ -78,7 +78,7 @@ h1 {
 /* 店舗情報のスタイル */
 .store-info {
     padding: 20px;
-    text-align: center;
+    text-align: left;
 }
 
 .store-info h2 {

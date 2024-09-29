@@ -1,0 +1,92 @@
+/* 全体のスタイル設定 */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+header {
+    background-color: #ff6347;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+h1 {
+    margin: 0;
+}
+
+/* クーポン一覧セクションのスタイル */
+.coupon-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* クーポンをクリック可能なリンクとして設定 */
+.coupon-item {
+    background-color: white;
+    width: 90%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.coupon-item:hover {
+    transform: scale(1.02); /* マウスオーバー時に少し拡大 */
+}
+
+/* 店舗画像 */
+.coupon-item img {
+    width: 100%;
+    height: auto;
+}
+
+/* 店舗情報のスタイル */
+.store-info {
+    padding: 10px;
+    text-align: center;
+}
+
+/* 店舗名のスタイル */
+h2 {
+    margin: 10px 0 5px;
+    font-size: 1.4em;
+    color: #333;
+}
+
+/* クーポン内容のスタイル */
+.store-info {
+    margin: 0;
+    font-size: 1.2em;
+    color: #ff6347;
+}
+
+/* リンクのデフォルトスタイルをリセット */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* 駅情報のスタイル */
+.station-info {
+    font-size: 0.9em;
+    color: #777;
+    margin-bottom: 5px;
+}
+
+/* フッター */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}

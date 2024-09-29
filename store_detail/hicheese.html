@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{店舗名}} - 詳細ページ</title>
+    <link rel="stylesheet" href="store_detail.css">
+</head>
+<body>
+    <section class="store-tile">
+        <div class="store-tile-card">
+            <div class="image-container">
+                <img src="/images/fuji.jpg" alt="{{店舗名}}の画像" class="store-image">
+                <!-- 左上に戻るボタン -->
+                <a href="javascript:history.back()" class="back-button">
+                    &#8592;
+                </a>
+            </div>
+            <div class="store-info">
+                <h2>藤</h2>
+                <p class="store-description">めじろ台からー美味しいうどんや、学生歓迎いつでもきてね例例例例例例例例例例例例例例例例例例例例例例例例例例例例例例
+                </p>
+
+                <h3>割引内容</h3>
+                <p>うどん大盛り無料</p>
+
+                <h3>注意点・割引方法</h3>
+                <p>この画面と学生を提示<br>注文時のみ有効</p>
+
+                <h3>問い合わせ先</h3>
+                <p>04-2662-8868<br>
+                〒193-0833 東京都八王子市めじろ台１丁目１００−１</p>
+
+                <h3>地図</h3>
+                <div id="map">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1621.184591380742!2d139.30751329999998!3d35.6432748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60191c23cdc1bc8b%3A0x2131ebb723e16b12!2z44GG44Gp44KT5oeQ55-z5aSp44G344KJ5pes6a6u44O75ZKM6Iaz44O76Jek!5e0!3m2!1sja!2sjp!4v1727600041739!5m2!1sja!2sjp" 
+                        class="map-iframe" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 CODEMATES</p>
+    </footer>
+</body>
+</html>

@@ -36,10 +36,6 @@ h1 {
     transition: transform 0.3s ease;
 }
 
-.store-tile-card:hover {
-    transform: scale(1.02);
-}
-
 /* 画像のスタイル */
 .image-container {
     position: relative;

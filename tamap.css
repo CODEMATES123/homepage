@@ -72,6 +72,27 @@ p{
     font-weight: 300;
 }
 
+.safari{
+    width: 5.5%;
+    margin-bottom: -1.2%;
+    margin-right: 1%;
+}
+
+.share1{
+    width: 4%;
+    margin: 1% 1% 0 1%;
+}
+
+.chrome{
+    width: 5%;
+    margin-bottom: -1%;
+}
+
+.share2{
+    width: 4%;
+    margin: 1% 1% 0 1%;
+}
+
 button {
     margin: 20px;
     outline: none;

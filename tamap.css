@@ -3,17 +3,14 @@ html {
 }
 
 body {
-    margin: 20vh 0 40vh 0;
+    margin: 20vh 0 0 0;
     padding: 0;
     display: flex;
     justify-content: center; /* 横方向の中央揃え */
     height: 140vh;
 }
 
-.cm-header{
-}
-
-header{
+.header{
     position: absolute;/*fixedで固定*/
     top: 0;
     width: 100%;
@@ -41,14 +38,6 @@ padding-inline-start: 0;
     text-align: center;
     color: black;
     font-family: Roboto, Arial;
-}
-
-.share1{
-    width: 4%;
-    margin-top: 2.5%;
-    margin-left: 1%;
-    margin-right: 1%;
-
 }
 
 #main {

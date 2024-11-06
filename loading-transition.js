@@ -38,10 +38,10 @@ function simulateLoading() {
   // 5秒後にローディングを終了
   setTimeout(() => {
       clearInterval(interval);
-      $("#splash").fadeOut(300, function() {
-          $("#content").fadeIn(300);
+      $("#splash").fadeOut(100, function() {
+          $("#content").fadeIn(100);
       });
-  },1000);
+  },500);
 }
 
 $(document).ready(function() {

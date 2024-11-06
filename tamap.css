@@ -18,9 +18,9 @@ body {
 }
 
 .cm-nav__list{
-justify-items: center;
-text-align: center;
-padding-inline-start: 0;
+    justify-items: center;
+    text-align: center;
+    padding-inline-start: 0;
 }
 
 #container {
@@ -61,6 +61,15 @@ padding-inline-start: 0;
     font-weight: 100;
 }
 
+.title3 {
+    font-size: min(6vw, 40px);
+    color: rgb(30, 30, 30);
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 p{
     font-size: min(4vw, 18px);
     font-weight: 300;
@@ -94,8 +103,10 @@ p{
 }
 
 button {
-    margin: 20px;
+    padding: 5px 20px;
+    margin-top: 7%;
     outline: none;
+    font-weight: bold;
 }
 .custom-btn {
     width: auto;
@@ -131,4 +142,11 @@ button {
 
 .mar {
     margin: 10vh 0;
+}
+
+.tamalab{
+    background:  rgb(255, 192, 90);
+    border-radius: 10px;
+    padding: 5vw;
+    justify-items: center;
 }

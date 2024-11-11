@@ -4,88 +4,91 @@
     <link rel="stylesheet" href="./schedule.css">
     <title>活動予定</title>
     <meta charset="UTF-8">
+    <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
 
 <body>
     <!-- ヘッダーが入る場所 -->
     <div id="header-placeholder"></div>
-    <div class="container">
-        <h1>活動予定</h1>
-        <p>　CODE MATESはIT技術を活用し社会に貢献することを目的としています。「たまっぷ」に代表されるプロジェクトを通じてIT技術の向上、そして社会貢献に努めています。</p>
-        <div class="articles">
-            <article>
-                <h1>プロジェクト紹介</h2>
-                    <div class="tamap project">
-                        <h2>たまっぷ</h2>
-                        <img class="photo-img" src="./tamap-schreenshot.jpg" alt="たまっぷのスクリーンショット">
-                        <a href="https://codemates.lolitapunk.jp/tamap/">たまっぷ（外部サイトにつながります）</a>
-                        <p>「たまっぷ」は「CODE MATES」が最初に開発したWebアプリケーションです。法政大学と最寄り3駅間のバス発着情報を提供するものです。
+    <div class="px-10 w-full">
+        <div class="">
+            <p class="text-2xl border-sky-400 border-b-2 font-bold my-8">活動予定</p>
+            <p>　CODE MATESはIT技術を活用し社会に貢献することを目的としています。「たまっぷ」に代表されるプロジェクトを通じてIT技術の向上、そして社会貢献に努めています。</p>
+        </div>
+        <div class="h-autos">
+            <p class="text-2xl border-b-sky-400 border-b-2 font-bold my-8">プロジェクト紹介</p>
+            <div class="h-full w-full p-2 float-left">
+                <div class="tamap project p-5 w-full">
+                    <p class="border-l-2 px-2 border-blue-600 font-bold text-xl mb-2">たまっぷ</p>
+                    <img class="photo-img rounded-md w-1/4 shadow float-right block" src="./tamap-schreenshot.jpg"
+                        alt="たまっぷのスクリーンショット">
+                    <a href="https://codemates.lolitapunk.jp/tamap/"
+                        class="underline text-blue-600">たまっぷ（外部サイトにつながります）</a>
+                    <p class="shadow rounded-md w-3/4 p-1 border-2 border-gray-200">「たまっぷ」は「CODE
+                        MATES」が最初に開発したWebアプリケーションです。法政大学と最寄り3駅間のバス発着情報を提供するものです。
                         <br>言語はPythonを使用し、サーバー側ではFlaskを利用しています。ユーザー側では、サーバーから送られたデータを保持しています。また、JavaScriptも使用し、ユーザーの操作に応じ、適切な表示に切り替えています。
-                        </p>
+                    </p>
+                </div>
+            </div>
+            <div class="tamalab project p-5 w-ful float-left">
+                <p class="border-l-2 px-2 border-blue-600 font-bold text-xl mb-2">たまらぼ</p>
+                <img class="photo-img photo-img rounded-md shadow w-1/2 float-right"
+                    src="https://www.hosei.ac.jp/application/files/2716/9466/4038/f67901c42be418cfc989ebb950f645e2.JPG"
+                    alt="たまらぼのチラシ">
+                <p class="shadow rounded-md w-1/2 p-1 border-2 border-gray-200">
+                    「たまらぼ：通称」は社会問題を解決したい同世代の学生が集うプログラム「チェンジメーカーズラボ in 多摩」です。
+                    <br>「CODE MATES」として、IT技術を駆使して本学周辺地域の利便性向上に貢献したいと考えています。
+                </p>
+                <a href="https://www.hosei.ac.jp/sic/pickup/article-20230907103930/?auth=9abbb458a78210eb174f4bdd385bcf54"
+                    class="underline text-blue-600">「たまらぼ」について（法政大学のホームページ）</a>
+            </div>
+
+        </div>
+        <div class="w-full">
+            <p class="text-2xl border-b-sky-400 border-b-2 font-bold mb-4 mt-10">その他</p>
+            <div class="p-2">
+                <p class="mt-3 font-bold text-xl border-l-2 border-sky-400 px-2 mb-2">活動日程</p>
+                <div class="shadow rounded-md pl-2 border-gray-400 border-2">
+                    <p>月・水曜日</p>
+                    <p>15:30～</p>
+                </div>
+                <p class="mt-3 font-bold text-xl border-l-2 border-sky-400 px-2 my-2">使っている・使う予定の言語</p>
+                <div class="pl-2 shadow rounded-md border-2 border-gray-400">
+                    <p>Python</p>
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>JavaScript</p>
+                </div>
+                <p class="font-bold text-xl border-l-2 border-sky-400 px-2 mt-2">学習・資格取得</p>
+                <div class="p-2 shadow rounded-md mt-2 border-gray-400 border-2">
+                    <div class="shadow rounded-md p-1 border-gray-300 border-2 my-1">
+                        <p class="font-bold text-xl border-l-2 border-blue-700 px-2 my-2">progate</p>
+                        <p>主に初心者向けの学習サイトで上記の言語などの基礎的な学習に利用しています。</p>
+                        <a href="https://prog-8.com/" class="underline text-blue-600">progate公式サイト</a>
                     </div>
-                    <div class="tamalab project">
-                        <h2>たまらぼ</h2>
-                        <img class="photo-img" src="https://www.hosei.ac.jp/application/files/2716/9466/4038/f67901c42be418cfc989ebb950f645e2.JPG"
-                            alt="たまらぼのチラシ">
-                        <p>「たまらぼ：通称」は社会問題を解決したい同世代の学生が集うプログラム「チェンジメーカーズラボ in 多摩」です。
-                        <br>「CODE MATES」として、IT技術を駆使して本学周辺地域の利便性向上に貢献したいと考えています。</p>
-                        <a
-                            href="https://www.hosei.ac.jp/sic/pickup/article-20230907103930/?auth=9abbb458a78210eb174f4bdd385bcf54">「たまらぼ」について（法政大学のホームページ）</a>
-                    </div>
-                    <!-- <div class="project">
-                    <h3>仮仮仮仮仮</h3>
-                    <p>説明仮仮仮仮仮仮仮仮仮仮仮仮仮仮仮仮仮仮仮仮仮仮仮仮仮仮仮仮仮仮仮仮仮仮仮仮仮仮仮仮仮仮仮仮仮仮仮仮仮仮仮仮仮仮仮仮仮仮仮仮仮仮仮仮仮仮仮仮仮</p>
-                </div> -->
-            </article>
-            <h1>その他</h1>
-            <article>
-                <h2>活動日程</h2>
-                <p>月・水曜日<br>15:30～</p>
-            </article>
-            <article>
-                <h2>使っている・使う予定の言語</h2>
-                <ul>
-                    <li>
-                        <p>Python</p>
-                    </li>
-                    <li>
-                        <p>HTML</p>
-                    </li>
-                    <li>
-                        <p>CSS</p>
-                    </li>
-                    <li>
-                        <p>JavaScript</p>
-                    </li>
-                </ul>
-            </article>
-            <article>
-                <h2>学習・資格取得</h2>
-                <ul>
-                    <li>
-                        <h3>progate</h3>
-                        <a href="https://prog-8.com/dashboard">progate 公式サイト</a>
-                        <p>主に初心者向けの学習サイトで、上記の言語などの基礎的な学習に利用しています。</p>
-                    </li>
-                    <li>
-                        <h3>paiza</h3>
-                        <a href="https://paiza.jp/">paiza 公式サイト</a>
+                    <div class="shadow rounded-md p-1 border-gray-300 border-2 my-1">
+                        <p class="font-bold text-xl border-l-2 border-blue-700 px-2 my-2">paiza</p>
                         <p>ITエンジニア向けのサイトで基礎的な実装力の向上に役立てています。</p>
-                    </li>
-                    <li>
-                        <h3>AtCoder</h3>
-                        <a href="https://atcoder.jp/?lang=ja">AtCoder 公式サイト</a>
-                        <p>「競技プログラミング」を通じて応用的な実装力・数学力・知識の習得を目指しています。<br>
+                        <a href="https://paiza.jp/" class="underline text-blue-600">paizaの公式サイト</a>
+                    </div>
+                    <div class="shadow rounded-md p-1 border-gray-300 border-2 my-1">
+                        <p class="font-bold text-xl border-l-2 border-blue-700 px-2 my-2">AtCoder</p>
+                        <p>「競技プログラミング」を通じて応用的な実装力・数学力・知識の習得を目指しています<br>
                             「競技プログラミング」とは与えられた問題をプログラミングを用いて解決し、その過程や結果を競う競技です。</p>
-                        <a href="https://info.atcoder.jp/overview/about/competitive">AtCoder 協議プログラミングとは?</a>
-                    </li>
-                    <li>
-                        <h3>基本情報技術者試験</h3>
-                        <a href="https://www.ipa.go.jp/shiken/kubun/fe.html">情報処理推進機構 公式サイト</a>
-                        <p>資格試験の学習を通じて基礎的な知識・技術の習得を目指しています。</p>
-                    </li>
-                </ul>
-            </article>
+                        <a href="https://atcoder.jp/" class="underline text-blue-600">AtCoder公式サイト</a>
+                    </div>
+                    <div
+                        class="shadow rounded-md p-1 border-gray-300 border-2 my-1">
+                        <p class="font-bold text-xl border-l-2 border-blue-700 px-2 my-2">基本情報技術者試験</p>
+                        資格試験の学習を通じて基礎的な知識・技術の習得を目指しています。</p>
+                        <a
+                            href="https://www.ipa.go.jp/shiken/kubun/fe.html"
+                            class="underline text-blue-600">基本情報技術者試験
+                            IPA公式サイト</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <script src="js/5-4.js"></script>
@@ -97,7 +100,7 @@
                 const headerContent = new DOMParser().parseFromString(data, 'text/html');
                 const header = headerContent.querySelector('header');
                 document.getElementById('header-placeholder').appendChild(header);
-                
+
                 // スタイルを適用
                 const style = headerContent.querySelector('style');
                 if (style) {

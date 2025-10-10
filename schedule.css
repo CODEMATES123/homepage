@@ -2,10 +2,6 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
 }
-header {
-  background-color: #333;
-  padding: 1em 0;
-}
 nav ul {
   list-style-type: none;
   padding: 0;

@@ -32,25 +32,12 @@ body {
     padding-left: 0;
   }
   
-  li {
-    margin-bottom: 10px;
-    padding: 10px;
-    background-color: #ecf0f1;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  }
+
   
   li:before {
     content: "";
   }
   
-  p {
-    background-color: #fff;
-    padding: 15px;
-    border-radius: 2px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    margin-bottom: 15px;
-  }
   
   .title{
       font-size:40px;

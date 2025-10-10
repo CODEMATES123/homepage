@@ -15,15 +15,15 @@ body {
 }
 
 main {
-  display: flex;
-  justify-content: center;
   width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .main-content {
   max-width: 900px;
   width: 100%;
-  padding: 0 20px; /* 必要に応じて調整可能 */
 }
 
 
@@ -77,8 +77,6 @@ ul {
 
 li {
 
-  border-radius: 8px;
-  box-shadow: var(--box-shadow);
   transition: transform 0.3s ease;
 }
 
@@ -175,4 +173,87 @@ p {
   animation: fadeIn 1s ease-out;
 }
 
+.gakusai-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gakusai-section img {
+    max-width: 350px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    margin-bottom: 1em;
+}
+
+.gakusai-glass-box {
+    width: 100%;
+    margin: 1.2em auto 1.2em auto;
+    padding: 0.6em auto;
+    max-width: 720px;
+    background: rgba(255,255,255,0.35);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+    border: 3px solid;
+    border-image: linear-gradient(90deg, #2589d0, #ff8c00, #ff2e7e, #2589d0) 1;
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: glassBoxFadeIn 1.2s cubic-bezier(.4,0,.2,1);
+}
+
+@keyframes glassBoxFadeIn {
+    from { opacity: 0; transform: scale(0.95);}
+    to   { opacity: 1; transform: scale(1);}
+}
+
+.gakusai-gradient-text {
+    font-size: 1.3em;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    background: linear-gradient(90deg, #2589d0, #ff8c00, #ff2e7e, #2589d0);
+    background-size: 200% 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    animation: gradientMove 3s linear infinite;
+    text-align: center;
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0% 50%;}
+    100% { background-position: 100% 50%;}
+}
+
+.gakusai-order-btn {
+    width: 70vw;
+    display: inline-block;
+    padding: 1em 2.2em;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 50px;
+    background: linear-gradient(90deg, #2589d0 0%, #ff8c00 50%, #ff2e7e 100%);
+    color: #fff;
+    text-decoration: none;
+    padding: 2% 10vw;
+    box-shadow: 0 4px 16px rgba(37,137,208,0.15);
+    border: none;
+    transition: transform 0.2s, box-shadow 0.2s, background 0.6s;
+    background-size: 200% 200%;
+    animation: btnGradientMove 2.5s linear infinite;
+    position: fixed;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9000;
+}
+
+@keyframes btnGradientMove {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
 

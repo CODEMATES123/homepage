@@ -5,102 +5,108 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>グローバルナビゲーション例</title>
     <style>
-        .cm-reset {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
+        :host, .cm-body, .glass-header-box, .cm-nav__link, .cm-nav__item, .cm-nav__list {
+    font-family: 'Arial', 'Roboto', sans-serif !important;
+    font-weight: 700 !important;
+    color: #333 !important;
+}
         .cm-body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
+            font-weight: 700;
+            margin: 0;
+            padding: 0;
+            background: transparent;
         }
 
-        .cm-header {
-            background-color: #333;
-            padding: 1em 0;
-        }
-
-        .cm-header__content {
+        .glass-header-box {
+            background: rgba(255, 255, 255, 0.61);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(6px);
+            border-radius: 50px;
+            box-shadow: 0 2px 7px rgba(0,0,0,0.12);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            margin: 0 0 0 0;
             display: flex;
+            flex-direction: column;
             align-items: center;
-            justify-content: space-between;
-            max-width: 1200px;
-            margin: 0 auto;
-            position: relative;
-        }
-
-        .cm-logo {
-            display: flex;
-            align-items: center;
+            position: fixed;
+            bottom: 1vh;
+            left: 50%;
+            width: 90%;
+            transform: translateX(-50%);
+            z-index: 9999;
+            max-width: 700px;
         }
 
         .cm-logo__img {
-            height: 50px;
-            margin-right: 10px;
+            display: block;
+            margin: 0 auto;
+            max-width: 98vw;
+            margin-top: 2%;
+            display: block;
+            height: 50px !important;
+            width: auto;
         }
 
-        .cm-nav {
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-
-        .cm-nav__list {
+.cm-nav__list {
+        justify-content: center; /* 横方向の中央揃え */
             list-style-type: none;
             display: flex;
-            justify-content: center;
-        }
+            padding: 0;
+            width: 100%;
+            margin-bottom: 0%;
+}
 
-        .cm-nav__item {
-            margin: 0 2.5%;
-        }
+.cm-nav{
+    width: 100%;
+    margin: 0 auto;
+}
 
-        .cm-nav__link {
-            color: white;
-            text-decoration: none;
-            font-size: 1.1em;
-            transition: color 0.3s ease;
-            white-space: nowrap;
-        }
+.cm-nav__item {
+}
+
+.cm-nav__link {
+    color: #333;
+    text-decoration: none;
+    margin: 0.5em;
+    max-width: 0 0.2em;
+    font-size: 4vw;
+    font-weight: 900;
+    display: inline-block; /* ← パディングを有効にする */
+    font-size: 1.4em !important;
+    font-weight: 600 !important;
+    text-decoration: none !important;   
+}
+
 
         .cm-nav__link:hover {
-            color: #ffd700;
-        }
+            background: rgba(255, 255, 255, 0);
+            color: #ffffff;
+            margin: 0%;       }
 
         @media (max-width: 768px) {
-            .cm-header__content {
-                flex-direction: column;
-                align-items: center;
+            .glass-header-box {
+                max-width: 95vw;
+                padding: 0em 0.2em;
             }
-
-            .cm-nav {
-                position: static;
-                transform: none;
-                margin-top: 10px;
-            }
-
             .cm-nav__list {
-                flex-wrap: wrap;
-                justify-content: center;
+                flex-direction: row;
+                align-items: center;
+                margin-top: 0%;
             }
-
             .cm-nav__item {
-                margin: 5px;
-            }
-
-            .cm-logo {
-                margin-bottom: 10px;
+                margin: 0.5em 0;
+                padding: 0%;
+                font-size: 0.7em;
             }
         }
     </style>
 </head>
 <body class="cm-body">
-    <header class="cm-header">
-        <div class="cm-header__content">
-            <div class="cm-logo">
-                <img class="cm-logo__img" src="codemates_logo.png" alt="codemates">
-            </div>
+    <header>
+        <img class="cm-logo__img" src="images/codemates.webp" alt="codemates">
+        <div class="glass-header-box">
             <nav class="cm-nav">
                 <ul class="cm-nav__list">
                     <li class="cm-nav__item"><a class="cm-nav__link" href="index.html">ホーム</a></li>

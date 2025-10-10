@@ -55,28 +55,28 @@
         <br>
         <br>
         <br>
-        <button class="custom-btn btn-1" onclick="location.href='https://codemates.lolitapunk.jp/tamap/'">インストールはこちら</button>
+        <button class="custom-btn btn-1" onclick="location.href='https://codemates.lolitapunk.jp/tamap/'">インストール</button>
         <!-- <div class="title2"> -->
             <!-- <a href="https://codemates.lolitapunk.jp/tamap/">Download Here</a> -->
         <!-- </div> -->
     </div>
 
     <script>
-        // header.htmlを非同期で読み込む
-        fetch('header.html')
-            .then(response => response.text())
-            .then(data => {
-                const headerContent = new DOMParser().parseFromString(data, 'text/html');
-                const header = headerContent.querySelector('header');
-                document.getElementById('header-placeholder').appendChild(header);
-                
-                // スタイルを適用
-                const style = headerContent.querySelector('style');
-                if (style) {
-                    document.head.appendChild(style);
-                }
-            })
-            .catch(error => console.error('ヘッダーの読み込みに失敗しました:', error));
+fetch('header.html')
+    .then(response => response.text())
+    .then(data => {
+        const headerContent = new DOMParser().parseFromString(data, 'text/html');
+        const header = headerContent.querySelector('header');
+        const style = headerContent.querySelector('style');
+
+        // Shadow DOMでヘッダーを隔離
+        const shadowHost = document.createElement('div');
+        const shadowRoot = shadowHost.attachShadow({mode: 'open'});
+        if (style) shadowRoot.appendChild(style.cloneNode(true));
+        if (header) shadowRoot.appendChild(header.cloneNode(true));
+        document.getElementById('header-placeholder').appendChild(shadowHost);
+    })
+    .catch(error => console.error('ヘッダーの読み込みに失敗しました:', error));
     </script>
 </body>
 </div>

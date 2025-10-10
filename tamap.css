@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    margin: 20vh 0 0 0;
+    margin: 10vh 0 0 0;
     padding: 0;
     display: flex;
     justify-content: center; /* 横方向の中央揃え */
@@ -17,12 +17,6 @@ body {
     margin: 0;
 }
 
-.cm-nav__list{
-    justify-items: center;
-    text-align: center;
-    padding-inline-start: 0;
-}
-
 #container {
     max-width: 640px; /* コンテナの最大幅 */
     width: 100%; /* 画面幅に対する100% */
@@ -31,7 +25,7 @@ body {
 }
 
 .title1 {
-    margin: 20% 0 10% 0;
+    margin: 0 0 5% 0;
     block-size: 100px;
     font-weight: bold;
     font-size: min(12vw, 100px);
@@ -109,20 +103,25 @@ button {
     font-weight: bold;
 }
 .custom-btn {
+    background: rgba(0, 100, 249, 0.651);
+    color: white;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(6px);
+    border-radius: 50px;
+    border: none;
+    box-shadow: 0 2px 7px rgba(0,0,0,0.12);
     width: auto;
     height: auto;
-    padding: 5px 10px;
-    border: 4px solid #000;
-    font-family: 'Lato', sans-serif;
+    font-weight: 600 !important;
+    padding: 10px 20px;
     font-weight: 800;
     font-size: 24px;
-    background: transparent;
-    -webkit-backdrop-filter: blur(20px); /* ぼかしエフェクト */
     backdrop-filter: blur(20px);
     cursor: pointer;
     transition: all 0.3s ease;
     position: relative;
     display: inline-block;
+    margin-bottom: 60px;
 }
 
   /* 1 */

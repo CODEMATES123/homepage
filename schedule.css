@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -20,4 +22,8 @@ nav ul li a {
 }
 nav ul li a:hover {
   color: #ffd700;
+}
+
+html, body {
+  height: 100%; /*高さを100%にして描画エリアをとる*/
 }

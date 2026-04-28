@@ -67,6 +67,7 @@
             padding: 16px;
         }
     </style>
+    <link rel="stylesheet" href="../output.css">
 </head>
 <body>
   <div id="header-placeholder"></div>
@@ -104,22 +105,6 @@
         </div>
     </div>
     <script src="js/particle.js"></script>
-        <script>
-            // header.htmlを非同期で読み込む
-            fetch('header.html')
-                .then(response => response.text())
-                .then(data => {
-                    const headerContent = new DOMParser().parseFromString(data, 'text/html');
-                    const header = headerContent.querySelector('header');
-                    document.getElementById('header-placeholder').appendChild(header);
-                    
-                    // スタイルを適用
-                    const style = headerContent.querySelector('style');
-                    if (style) {
-                        document.head.appendChild(style);
-                    }
-                })
-                .catch(error => console.error('ヘッダーの読み込みに失敗しました:', error));
-        </script>
+
 </body>
 </html>

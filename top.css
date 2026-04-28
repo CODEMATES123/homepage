@@ -1,0 +1,100 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    max-width: 800px;
+    margin: 0, auto;
+    position: absolute;
+    
+  
+  
+    padding: 20px;
+    background-color: #f4f4f4;
+    
+  }
+  
+  h1 {
+  
+    color: #2c3e50;
+    text-align: center;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    font-size: 2rem;
+  }
+  
+  h3 {
+    color: #2980b9;
+    margin-top: 30px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+
+  
+  li:before {
+    content: "";
+  }
+  
+  
+  .title{
+      font-size:40px;
+      font-weight:bold;
+  }
+  
+  
+  
+  
+  
+  @media screen and (max-width: 600px) {
+    body {
+        /* レスポンシブ対応: 小さい画面でパディングを縮小 */
+        padding: 4px;
+        display: inline-block;
+        text-align: left;
+  
+    }
+  
+    h1 {
+        /* レスポンシブ対応: 小さい画面でフォントサイズを縮小 */
+        font-size: 0.4rem;
+    }
+  
+    h3 {
+        /* レスポンシブ対応: 小さい画面でフォントサイズを縮小 */
+        font-size: 0.3rem;
+    }
+  
+    li, p {
+        /* レスポンシブ対応: 小さい画面でパディングとフォントサイズを縮小 */
+        padding: 5px;
+        font-size: 1.4rem;
+        
+    }
+  
+    .title{
+      font-size:2.5rem;
+    }
+  
+    
+  }
+  
+  
+  
+  
+  @media (orientation: landscape){ /*横向き*/
+    body{
+  
+    
+  
+  
+    padding: 20px;
+      margin: 0,auto;
+      left:10%;
+      right:10%;
+      display: inline-block;
+      text-align: left;
+  }
+  }

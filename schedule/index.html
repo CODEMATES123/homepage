@@ -116,7 +116,7 @@
               </div>
               <div class="">JavaScriptに「型」の概念を導入した言語です。</div>
             </div>
-            
+
             <div class="p-2 border bg-sky-400/10 rounded-xl border-black/10 backdrop-blur-sm">
               <div class="flex gap-2 text-sm">
                 <img class="size-5"
@@ -183,26 +183,15 @@
             IPA公式サイト</a>
         </div>
       </div>
-
     </div>
-  </div>
+    <nav class="fixed items-center flex w-full font-semibold bottom-8">
+      <ul class="flex gap-2 md:gap-6 md:text-xl p-4 rounded-full shadow-lg backdrop-blur-md mx-auto">
+        <li class=""><a class="hover:underline" href="/">ホーム</a></li>
+        <li class=""><a class="hover:underline" href="/tamap">たまっぷ</a></li>
+        <li class=""><a class="hover:underline" href="/schedule">活動内容</a></li>
+        <li class=""><a class="hover:underline" href="/contact">お問い合わせ</a></li>
+      </ul>
+    </nav>
   </div>
   <script src="js/particle.js"></script>
-  <script>
-    // header.htmlを非同期で読み込む
-    fetch('header.html')
-      .then(response => response.text())
-      .then(data => {
-        const headerContent = new DOMParser().parseFromString(data, 'text/html');
-        const header = headerContent.querySelector('header');
-        document.getElementById('header-placeholder').appendChild(header);
-
-        // スタイルを適用
-        const style = headerContent.querySelector('style');
-        if (style) {
-          document.head.appendChild(style);
-        }
-      })
-      .catch(error => console.error('ヘッダーの読み込みに失敗しました:', error));
-  </script>
 </body>

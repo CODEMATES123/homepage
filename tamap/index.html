@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>たまっぷ｜CODEMAETS</title>
-    <link rel="stylesheet" href="tamap.css">
+    <link rel="stylesheet" href="./style.css">
     <meta name="description" content="多摩キャンパス専用のバス時刻表アプリ『TaMAP』。インストール方法を詳しく解説します。">
     <meta name="keywords" content="多摩キャンパス, 法政大学, バス時刻表, アプリ, TaMAP, たまらぼ">
     <meta name="robots" content="index, follow">
@@ -26,7 +26,7 @@
 <body>
     <h1 class="title1">TaMAP.</h1>
     <div class="body1">
-        <img class="tamap_poster" src="images/tamap_poster.webp">
+        <img class="tamap_poster" src="../images/tamap_poster.webp">
 
         <p>多摩キャンパス専用　バス時刻表App<br></p>
         <br>
@@ -62,7 +62,7 @@
     </div>
 
     <script>
-fetch('header.html')
+fetch('../header.html')
     .then(response => response.text())
     .then(data => {
         const headerContent = new DOMParser().parseFromString(data, 'text/html');

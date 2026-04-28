@@ -1,3 +1,11 @@
+@import url("./accordion.css");
+@import url("./slide.css");
+@import url("./activity.css");
+@import url("./activity_parts.css");
+@import url("./recommended-title-styles.css");
+@import url("./css/particlesjs-settings.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+
 :root {
   --primary-color: #3498db;
   --secondary-color: #2c3e50;

@@ -1,0 +1,25 @@
+{
+  "name": "homepage",
+  "version": "1.0.0",
+  "description": "https://codemates123.github.io/homepage/",
+  "homepage": "https://github.com/CODEMATES123/homepage#readme",
+  "bugs": {
+    "url": "https://github.com/CODEMATES123/homepage/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CODEMATES123/homepage.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "tailwindcss": "^4.2.4"
+  }
+}

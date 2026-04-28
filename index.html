@@ -20,12 +20,13 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="robots" content="index, follow">
   <div id="header-placeholder"></div>
+  <link rel="stylesheet" href="./output.css">
 
 
-  
 </head>
 
 <body>
+  <img class="block mx-auto h-[50px] w-auto mt-8" src="../images/codemates.webp" alt="codemates">
   <div id="particles-js"></div>
   <div id="wrapper">
     <div id="splash">
@@ -60,15 +61,6 @@
     </div>
 
     <main>
-      <section class="gakusai-section">
-        <div class="gakusai-glass-box">
-          <span class="gakusai-gradient-text">多摩祭2025年に<br>初出展します！</span>
-        </div>
-        <img src="images/gakusai_poster.webp" alt="学祭ポスター">
-        <a href="https://codemates.lolitapunk.jp/tamap/" target="_blank" class="gakusai-order-btn">
-          たまっぷアプリで<br>モバイルオーダーはこちら！
-        </a>
-      </section>
       <div class="main-content">
         <section class="features">
           <div class="feature-image">
@@ -160,36 +152,31 @@
         </p>
 
       </div>
-
+      
     </main>
+    
     <footer style="background-color: #333;  width: 100%; padding: 0; text-align: center; margin: 0; margin-top: 100px;">
       <div style="padding: 1em 0;">
         <p class="footer-text">&copy; 2024 codemate</p>
       </div>
     </footer>
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./js/loading-transition.js"></script>
     <script src="./js/slide.js"></script>
     <script src="./js/accordion.js"></script>
     <script src="./js/particle.js"></script>
-    <script>
-      // header.htmlを非同期で読み込む
-      fetch('header.html')
-        .then(response => response.text())
-        .then(data => {
-          const headerContent = new DOMParser().parseFromString(data, 'text/html');
-          const header = headerContent.querySelector('header');
-          document.getElementById('header-placeholder').appendChild(header);
-
-          // スタイルを適用
-          const style = headerContent.querySelector('style');
-          if (style) {
-            document.head.appendChild(style);
-          }
-        })
-        .catch(error => console.error('ヘッダーの読み込みに失敗しました:', error));
-    </script>
   </div>
+  <nav class="fixed flex font-semibold bottom-8 w-full px-4" style="z-index: 10000;">
+    <ul
+      class="flex justify-self-center gap-2 md:gap-6 md:text-xl p-4 rounded-full shadow-lg backdrop-blur-md mx-auto">
+      <li><a class="hover:underline" href="/">ホーム</a></li>
+      <li><a class="hover:underline" href="/tamap">たまっぷ</a></li>
+      <li><a class="hover:underline" href="/schedule">活動内容</a></li>
+      <li><a class="hover:underline" href="/contact">お問い合わせ</a></li>
+    </ul>
+  </nav>
+
 </body>
 
 </html>

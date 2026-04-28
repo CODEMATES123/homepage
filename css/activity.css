@@ -5,6 +5,7 @@
 @import url("./recommended-title-styles.css");
 @import url("./css/particlesjs-settings.css");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+@import url("./footer.css");
 
 :root {
   --primary-color: #3498db;

@@ -1,4 +1,4 @@
-<!-- npx @tailwindcss/cli -i ./schedule.css -o ./output.css --watch -->
+<!-- npx @tailwindcss/cli -i ./schedule/style.css -o ./output.css --watch -->
 
 <!DOCTYPE html>
 
@@ -12,196 +12,148 @@
 
 <body>
   <div id="header-placeholder" class=""></div>
+  <img class="block mx-auto h-12.5 w-auto mt-8" src="../images/codemates.webp" alt="codemates">
   <div id="particles-js" class="fixed w-full h-full -z-10"></div>
   <div class="relative z-0 w-full min-h-screen black" id="wrapper">
-    <div class="max-w-4xl px-5 py-10 mx-auto font-medium">
-      <div class="p-4 border shadow rounded-xl border-neutral-200 backdrop-blur-sm">
-        <p class="inline-block text-3xl">活動概要</p>
-        <p class="text-lg">　CODE MATESはIT技術を活用し社会に貢献することを目的としています。「たまっぷ」に代表されるプロジェクトを通じてIT技術の向上、そして社会貢献に努めています。</p>
+    <div class="max-w-4xl px-5 py-10 mx-auto font-medium font-mono">
+      <div class="p-4 border rounded-xl border-neutral-200 backdrop-blur-sm">
+        <h1 class="text-3xl border-b">活動概要</h1>
+        <p class="text-lg">CODE MATESはIT技術を活用し社会に貢献することを目的としています。「たまっぷ」に代表されるプロジェクトを通じてIT技術の向上、そして社会貢献に努めています。</p>
       </div>
-      <div class="h-autos">
-        <p class="my-8 text-2xl font-bold border-b-2 border-b-sky-400">プロジェクト紹介</p>
-        <p class="px-4 py-2 text-xl font-bold border-l-2 border-l-blue-500">たまっぷ</p>
-        <div class="p-2">
-          <a href="https://codemates.lolitapunk.jp/tamap/"
-            class="text-xl font-semibold text-blue-600 underline">たまっぷ（外部サイトにつながります）</a>
-          <div class="grid w-full grid-cols-3 gap-5 p-2">
-            <p
-              class="col-span-3 p-10 transition-all shadow-lg black hover:shadow-xl rounded-2xl from-blue-300 to-orange-400 bg-linear-to-bl/oklch">
-              「たまっぷ」は「CODE
-              MATES」が最初に開発したWebアプリケーションです。法政大学と最寄り3駅間のバス発着情報を提供するものです。
-              <br>TypeScriptとReactを使っています。静的ホスティングでありながらフロントエンドに機能を集約することで高いUXを実現しています。
-            </p>
-          </div>
+      <h2 class="my-4 text-2xl font-bold border-b border-b-blue-600">プロジェクト紹介</h2>
+      <h3 class="text-xl font-bold px-2">
+        <a href="https://codemates.lolitapunk.jp/tamap/"
+          class="mx-auto text-2xl font-bold text-transparent bg-clip-text from-orange-600 to-blue-600 bg-linear-30/oklch underline">たまっぷ（外部サイトにつながります）</a>
+      </h3>
+      <div class="border-black/10 rounded-md border p-2 shadow m-2">
+        <div class="grid md:grid-cols-2 items-center">
+          <iframe src="https://codemates.lolitapunk.jp/tamap" frameborder="0" class="w-full h-200"></iframe>
+          <p class="p-6 black">
+            「たまっぷ」は「CODE
+            MATES」が最初に開発したWebアプリケーションです。法政大学と最寄り3駅間のバス発着情報を提供するものです。
+            TypeScriptとReactを使っています。静的ホスティングでありながらフロントエンドに機能を集約することで高いUXを実現しています。
+          </p>
         </div>
-        <div class="float-left w-full h-full">
-          <p class="px-2 mb-2 text-xl font-bold border-l-2 border-blue-600">たまらぼ</p>
-          <a href="https://www.hosei.ac.jp/sic/pickup/article-20230907103930/?auth=9abbb458a78210eb174f4bdd385bcf54"
-            class="text-xl font-semibold text-blue-600 underline">「たまらぼ」について（法政大学のホームページ）</a>
-          <div class="grid gap-5 p-2 sm:grid-cols-2">
-            <img class="col-span-1 shadow photo-img rounded-2xl"
-              src="https://www.hosei.ac.jp/application/files/2716/9466/4038/f67901c42be418cfc989ebb950f645e2.JPG"
-              alt="たまらぼのチラシ">
-            <p
-              class="col-span-1 p-4 text-lg transition-all shadow rounded-2xl from-blue-300 via-yellow-200 to-green-300 bg-linear-to-br/oklch">
-              「たまらぼ：通称」は社会問題を解決したい同世代の学生が集うプログラム「チェンジメーカーズラボ in 多摩」です。
-              <br>「CODE MATES」として、IT技術を駆使して本学周辺地域の利便性向上に貢献したいと考えています。
-            </p>
-          </div>
+      </div>
+      <h3 class="text-xl font-bold border-b border-blue-600 px-2 ml-4">たまらぼ</h3>
+      <div class="border-black/10 rounded-md p-2 shadow m-2">
+        <a href="https://www.hosei.ac.jp/sic/pickup/article-20230907103930/?auth=9abbb458a78210eb174f4bdd385bcf54"
+          class="text-base font-semibold text-blue-600 underline">「たまらぼ」について（法政大学のホームページ）</a>
+        <div class="gap-5 p-2 flex flex-col items-center">
+          <img class="col-span-1 shadow photo-img rounded-2xl max-w-md"
+            src="https://www.hosei.ac.jp/application/files/2716/9466/4038/f67901c42be418cfc989ebb950f645e2.JPG"
+            alt="たまらぼのチラシ">
+          <p class="col-span-1 p-4 text-lg transition-all rounded-2xl">
+            「たまらぼ：通称」は社会問題を解決したい同世代の学生が集うプログラム「チェンジメーカーズラボ in 多摩」です。
+            <br>「CODE MATES」として、IT技術を駆使して本学周辺地域の利便性向上に貢献したいと考えています。
+          </p>
         </div>
-        <div class="">
-          <a href="https://www.youtube.com/watch?v=GUyM6BAghIU"
-            class="text-xl font-semibold text-blue-600 underline">たまらぼ DEMO DAYの様子</a>
+        <section class="">
+          <a href="https://www.youtube.com/watch?v=GUyM6BAghIU" class="text-xl font-semibold text-blue-600 underline">たまらぼ
+            DEMO DAYの様子</a>
           <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/GUyM6BAghIU?si=Tb72Jh_l6E3FbLSD"
             title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="max-w-full mx-auto mt-5"></iframe>
-        </div>
-      </div>
-      <div class="w-full">
-        <p class="mt-10 mb-4 text-2xl font-bold border-b-2 border-b-sky-400">その他</p>
-        <p class="text-xl font-bold text-rose-600">月・火・金曜日の15：30～活動しています！</p>
-        <p class="px-2 my-2 mt-3 text-xl font-bold border-l-2 border-blue-400">使っている・使う予定の技術</p>
-
-        <section class="flex flex-col gap-2 text-base">
-          <!-- Python -->
-          <div class="p-2 border rounded-xl border-black/10 backdrop-blur-sm bg-blue-700/10">
-            <div class="flex gap-2">
-              <img class="size-6"
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/800px-Python-logo-notext.svg.png"
-                alt="">
-              Python
-            </div>
-            <div class="">近年AIの需要が高まるにつれて授業が急増している言語です。AI・データサイエンス分野に向いています。</div>
-          </div>
-          <!-- HTML -->
-          <div class="p-2 border rounded-xl border-black/10 backdrop-blur-sm bg-orange-600/10">
-            <div class="flex gap-2 text-sm">
-              <img class="size-6"
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1024px-HTML5_logo_and_wordmark.svg.png"
-                alt="">
-              HTML
-            </div>
-            <div class="">Webページの「骨組み」をつくための言語です。厳密にはプログラミング言語ではありません</div>
-          </div>
-          <!-- CSS -->
-          <div class="p-2 border rounded-xl border-black/10 backdrop-blur-sm bg-sky-500/10">
-            <div class="flex gap-2 text-sm">
-              <img class="size-6 aspect-square"
-                src="https://www.w2solution.co.jp/wp-content/uploads/2023/01/css_original_wordmark_logo_icon_146576-e1673940862306.png"
-                alt="">
-              <span>CSS</span>
-            </div>
-            <div class="">Webページのデザインを作るための言語です。HTMLと共に使用してWebページを形作っていきます。</div>
-          </div>
-          <!-- JavaScript -->
-          <div class="p-2 border rounded-xl border-black/10 backdrop-blur-sm bg-yellow-400/10">
-            <div class="flex gap-2 text-sm">
-              <img class="size-5"
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuHnJDLOcdm_0b6N6kNj-1OvO9KhKYgqIy0w&s"
-                alt="">
-              <span>JavaScript</span>
-            </div>
-            <div class="">Webブラウザで動作するプログラミング言語です。</div>
-          </div>
-          <!-- JS系 -->
-          <div class="flex flex-col gap-2 px-2">
-            <div class="p-2 border bg-blue-600/10 rounded-xl border-black/10 backdrop-blur-sm">
-              <div class="flex gap-2 text-sm">
-                <img class="size-5"
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/250px-Typescript_logo_2020.svg.png"
-                  alt="">
-                <span>TypeScript</span>
-              </div>
-              <div class="">JavaScriptに「型」の概念を導入した言語です。</div>
-            </div>
-            
-            <div class="p-2 border bg-sky-400/10 rounded-xl border-black/10 backdrop-blur-sm">
-              <div class="flex gap-2 text-sm">
-                <img class="size-5"
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1280px-React-icon.svg.png"
-                  alt="">
-                <span>React</span>
-              </div>
-              <div class="">動きのあるWebサイトを作る際に用いられるJavaScriptのフレームワークです。</div>
-            </div>
-            <div class="p-2 border bg-black/10 rounded-xl border-black/10 backdrop-blur-sm">
-              <div class="flex gap-2 text-sm">
-                <img class="size-5"
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf4Gm4ZZkmeriyXZlpU7_sXXHYDt06yt9yLQ&s"
-                  alt="">
-                <span>Next.js</span>
-              </div>
-              <div class="">Reactと組み合わせてWebサイトのフロントエンドとバックエンドを作ることができます。</div>
-            </div>
-          </div>
-
-          <!-- CSharp -->
-          <div class="p-2 border backdrop-blur-sm bg-purple-700/10 rounded-xl border-black/10">
-            <div class="flex gap-2 text-sm">
-              <img src="https://breadmotion.github.io/WebSite/assets/img/csharp_icon.png" alt="" class="size-5">
-              <span>C#</span>
-            </div>
-            <div class="">「Unity」というソフトウェアとともに使ってゲームを作ることができます。</div>
-          </div>
-          <!-- Java -->
-          <div class="p-2 border backdrop-blur-sm bg-yellow-950/10 rounded-xl border-black/10">
-            <div class="flex gap-2 text-sm">
-              <img
-                src="https://cdn.bap-software.net/2024/01/03211643/How-is-AI-applied-to-Java-programming-e1704266486769.jpg"
-                alt="" class="size-5">
-              <span>Java</span>
-            </div>
-            <div class="">金融，行政のような日本の多くの基幹システムで使われている言語です。</div>
-          </div>
         </section>
+      </div>
+      <section>
 
-      </div>
-      <p class="px-2 mt-2 text-xl font-bold border-l-2 border-blue-500">学習・資格取得</p>
-      <div class="grid gap-2 p-2 m-2 border shadow md:grid-cols-2 border-black/10 rounded-xl backdrop-blur-md">
-        <div class="p-4 border border-black/10 rounded-xl bg-blue-500/15">
-          <p class="text-xl font-semibold">progate</p>
-          <p>主に初心者向けの学習サイトで上記の言語などの基礎的な学習に利用しています。</p>
-          <a href="https://prog-8.com/" class="text-blue-600 underline">progate公式サイト</a>
+        <h3>
+          <a href="https://hosei-link.hosei-codemates.workers.dev/"
+           class="text-4xl underline font-bold text-transparent bg-clip-text from-blue-700 to-orange-600 bg-linear-60/oklch">HoseiLink</a>
+        </h3>
+        <div class="grid md:grid-cols-2 gap-2 items-center border border-black/10 shadow rounded-md p-2 m-2">
+          <iframe src="https://hosei-link.hosei-codemates.workers.dev/" frameborder="0" class="h-200 w-full shadow-lg rounded-md"></iframe>
+          <p class="text-lg">「HoseiLink」はCODE MATESが開発した法政大学生向けSNSアプリです。同じ学部・学科や同じ授業を登録している人同士でつながることができます。法政大学の学生のみ閲覧・利用ができるようになっています。
+          </p>
         </div>
-        <div class="p-4 border border-black/10 rounded-xl bg-blue-500/15">
-          <p class="text-xl font-semibold">paiza</p>
-          <p>ITエンジニア向けのサイトで基礎的な実装力の向上に役立てています。</p>
-          <a href="https://paiza.jp/" class="text-blue-600 underline">paizaの公式サイト</a>
+      </section>
+    </div>
+    <div class="max-w-3xl mx-auto font-mono mb-20">
+      <h2 class="my-4 text-2xl font-bold border-b border-b-blue-600">その他</h2>
+      <p class="text-xl font-bold text-rose-600">月・火・金曜日の15：30～活動しています！</p>
+      <p class="px-2 my-2 mt-3 text-xl font-bold border-b border-blue-600">使っている・使う予定の技術</p>
+
+      <section class="flex flex-col gap-2 text-base">
+        <!-- Python -->
+        <div class="p-2 rounded-xl border-black/10 backdrop-blur-sm bg-blue-700/10">
+          <div class="flex gap-2">
+            Python
+          </div>
+          <div class="">近年AIの需要が高まるにつれて授業が急増している言語です。AI・データサイエンス分野に向いています。</div>
         </div>
-        <div class="p-4 border border-black/10 rounded-xl bg-blue-500/15">
-          <p class="text-xl font-semibold">AtCoder</p>
-          <p>「競技プログラミング」を通じて応用的な実装力・数学力・知識の習得を目指しています<br>
-            「競技プログラミング」とは与えられた問題をプログラミングを用いて解決し、その過程や結果を競う競技です。</p>
-          <a href="https://atcoder.jp/" class="text-blue-600 underline">AtCoder公式サイト</a>
+        <!-- HTML -->
+        <div class="p-2 rounded-xl border-black/10 backdrop-blur-sm bg-orange-600/10">
+          <div class="flex gap-2 text-sm">
+            HTML
+          </div>
+          <div class="">Webページの「骨組み」をつくための言語です。厳密にはプログラミング言語ではありません</div>
         </div>
-        <div class="p-4 border border-black/10 rounded-xl bg-blue-500/15">
-          <p class="text-xl font-semibold">基本情報技術者試験</p>
-          資格試験の学習を通じて基礎的な知識・技術の習得を目指しています。</p>
-          <a href="https://www.ipa.go.jp/shiken/kubun/fe.html" class="text-blue-600 underline">基本情報技術者試験
-            IPA公式サイト</a>
+        <!-- CSS -->
+        <div class="p-2 rounded-xl border-black/10 backdrop-blur-sm bg-sky-500/10">
+          <div class="flex gap-2 text-sm">
+            <span>CSS</span>
+          </div>
+          <div class="">Webページのデザインを作るための言語です。HTMLと共に使用してWebページを形作っていきます。</div>
         </div>
-      </div>
+        <!-- JavaScript -->
+        <div class="p-2 rounded-xl border-black/10 backdrop-blur-sm bg-yellow-400/10">
+          <div class="flex gap-2 text-sm">
+            <span>JavaScript</span>
+          </div>
+          <div class="">Webブラウザで動作するプログラミング言語です。</div>
+        </div>
+        <!-- JS系 -->
+        <div class="flex flex-col gap-2 px-2">
+          <div class="p-2 bg-blue-600/10 rounded-xl border-black/10 backdrop-blur-sm">
+            <div class="flex gap-2 text-sm">
+              <span>TypeScript</span>
+            </div>
+            <div class="">JavaScriptに「型」の概念を導入した言語です。</div>
+          </div>
+
+          <div class="p-2 bg-sky-400/10 rounded-xl border-black/10 backdrop-blur-sm">
+            <div class="flex gap-2 text-sm">
+              <span>React</span>
+            </div>
+            <div class="">動きのあるWebサイトを作る際に用いられるJavaScriptのフレームワークです。</div>
+          </div>
+          <div class="p-2 bg-black/10 rounded-xl border-black/10 backdrop-blur-sm">
+            <div class="flex gap-2 text-sm">
+              <span>Next.js</span>
+            </div>
+            <div class="">Reactと組み合わせてWebサイトのフロントエンドとバックエンドを作ることができます。</div>
+          </div>
+        </div>
+
+        <!-- CSharp -->
+        <div class="p-2 backdrop-blur-sm bg-purple-700/10 rounded-xl border-black/10">
+          <div class="flex gap-2 text-sm">
+            <span>C#</span>
+          </div>
+          <div class="">「Unity」というソフトウェアとともに使ってゲームを作ることができます。</div>
+        </div>
+        <!-- Java -->
+        <div class="p-2 backdrop-blur-sm bg-yellow-950/10 rounded-xl border-black/10">
+          <div class="flex gap-2 text-sm">
+            <span>Java</span>
+          </div>
+          <div class="">金融，行政のような日本の多くの基幹システムで使われている言語です。</div>
+        </div>
+      </section>
 
     </div>
+  
   </div>
+  <nav class="fixed items-center flex w-full font-semibold bottom-8">
+    <ul class="flex gap-2 md:gap-6 md:text-xl p-4 rounded-full shadow-lg backdrop-blur-md mx-auto">
+      <li class=""><a class="hover:underline" href="/">ホーム</a></li>
+      <li class=""><a class="hover:underline" href="/tamap">たまっぷ</a></li>
+      <li class=""><a class="hover:underline" href="/schedule">活動内容</a></li>
+      <li class=""><a class="hover:underline" href="/contact">お問い合わせ</a></li>
+    </ul>
+  </nav>
   </div>
-  <script src="js/5-4.js"></script>
-  <script>
-    // header.htmlを非同期で読み込む
-    fetch('header.html')
-      .then(response => response.text())
-      .then(data => {
-        const headerContent = new DOMParser().parseFromString(data, 'text/html');
-        const header = headerContent.querySelector('header');
-        document.getElementById('header-placeholder').appendChild(header);
-
-        // スタイルを適用
-        const style = headerContent.querySelector('style');
-        if (style) {
-          document.head.appendChild(style);
-        }
-      })
-      .catch(error => console.error('ヘッダーの読み込みに失敗しました:', error));
-  </script>
+  <script src="js/particle.js"></script>
 </body>

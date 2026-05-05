@@ -1,125 +1,112 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>お問い合わせ|CODEMATES</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-        }
-        nav ul li {
-            margin: 0 2.5%;
-        }
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-size: 1.1em;
-            transition: color 0.3s ease;
-        }
-        nav ul li a:hover {
-            color: #ffd700;
-        }
-        .contact-container {
-            background-color: #ffffff;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            padding: 8%;
-        }
-        h1 {
-            color: #2c3e50;
-            border-bottom: 2px solid #3498db;
-            padding-bottom: 10px;
-        }
-        .contact-info {
-            margin-top: 20px;
-        }
-        .contact-item {
-            margin-bottom: 15px;
-        }
-        .contact-item h2 {
-            font-size: 1.2em;
-            color: #3498db;
-            margin-bottom: 5px;
-        }
-        .contact-item p {
-            margin: 0;
-        }
-        .map {
-            margin-top: 30px;
-            margin-bottom: 50px;
-        }
-        .map iframe {
-            width: 100%;
-            height: 300px;
-            border: none;
-            border-radius: 8px;
-        }
-        .SNS {
-            padding: 16px;
-        }
-    </style>
+  <link rel="stylesheet" href="../output.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>お問い合わせ|CODEMATES</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .contact-container {
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      color: #2c3e50;
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 10px;
+    }
+
+    .contact-info {
+      margin-top: 20px;
+    }
+
+    .contact-item {
+      margin-bottom: 15px;
+    }
+
+    .contact-item h2 {
+      font-size: 1.2em;
+      color: #3498db;
+      margin-bottom: 5px;
+    }
+
+    .contact-item p {
+      margin: 0;
+    }
+
+    .map {
+      margin-top: 30px;
+      margin-bottom: 50px;
+    }
+
+    .map iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      border-radius: 8px;
+    }
+
+    .SNS {
+      padding: 16px;
+    }
+  </style>
 </head>
+
 <body>
+  <img class="block mx-auto h-[50px] w-auto mt-8" src="../images/codemates.webp" alt="codemates">
   <div id="header-placeholder"></div>
-    <div class="contact-container">
-        <h1>お問い合わせ</h1>
-        <div class="contact-info">
-            <div class="contact-item">
-                <h2>アクセス</h2>
-                <p>〒194-0298　東京都町田市相原町4342　EGG DOME 5階 研修室</p>
-            </div>
-            <div class="contact-item">
-                <h2>メールアドレス</h2>
-                <p>hosei.codemates@gmail.com</p>
-            </div>
-            <div class="contact-item">
-                <h2>活動時間</h2>
-                <p>月曜日、水曜日: 15:30 - 19:00</p>
-            </div>
-            <div class="contact-item">
-                <h2>SNS</h2>
-                <p>
-                    <a class="SNS" href="https://www.instagram.com/codemates_hosei?igsh=MTJvcmthMzUwOW90cg==">
-                    <img src="../images/Instagram_logo_2022.svg.png" alt="インスタグラム">
-                    </a>
-                <a class="SNS" href="https://line.me/ti/g2/B4BghfuVwufgXJkhifHFNdFPF_v5C79aEdasaw?utm_source=invitation&utm_medium=link_copy&utm_campaign=default">
-                    <img src="../images/line-logo-002.png" alt="ラインオープンチャット">
-                </a>
-                </p>
-            </div>
-        </div>
-        <div class="map">
-            <h2>アクセスマップ</h2>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d810.895564545262!2d139.29697414923646!3d35.613369863910364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60191c644b950b81%3A0xe79f5278bc91490e!2sEgg%20Dome!5e0!3m2!1sja!2sjp!4v1724147752783!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <!-- <iframe src="" allowfullscreen="" loading="lazy"></iframe> -->
-        </div>
+  <div class="contact-container p-4 max-w-3xl mx-auto shadow">
+    <h1>お問い合わせ</h1>
+    <div class="contact-info">
+      <div class="contact-item">
+        <h2>アクセス</h2>
+        <p>〒194-0298　東京都町田市相原町4342　EGG DOME 5階</p>
+      </div>
+      <div class="contact-item">
+        <h2>メールアドレス</h2>
+        <p>hosei.codemates@gmail.com</p>
+      </div>
+      <div class="contact-item">
+        <h2>活動時間</h2>
+        <p>月曜日・水曜日・金曜日: 15:30 -</p>
+      </div>
+      <div class="contact-item">
+        <h2>公式SNS</h2>
+        <p>
+          <a class="SNS flex items-center gap-2"
+            href="https://www.instagram.com/codemates_hosei?igsh=MTJvcmthMzUwOW90cg==">
+            <img src="../images/Instagram_logo_2022.svg.png" alt="インスタグラム">
+            <span
+              class="bg-linear-120 from-purple-500 via-pink-500 to-orange-500 bg-clip-text font-bold text-transparent font-mono text-xl hover:underline">Instagram</span>
+          </a>
+        </p>
+      </div>
     </div>
-    <script src="js/5-4.js"></script>
-        <script>
-            // header.htmlを非同期で読み込む
-            fetch('header.html')
-                .then(response => response.text())
-                .then(data => {
-                    const headerContent = new DOMParser().parseFromString(data, 'text/html');
-                    const header = headerContent.querySelector('header');
-                    document.getElementById('header-placeholder').appendChild(header);
-                    
-                    // スタイルを適用
-                    const style = headerContent.querySelector('style');
-                    if (style) {
-                        document.head.appendChild(style);
-                    }
-                })
-                .catch(error => console.error('ヘッダーの読み込みに失敗しました:', error));
-        </script>
+    <div class="map">
+      <h2>アクセスマップ</h2>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d810.895564545262!2d139.29697414923646!3d35.613369863910364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60191c644b950b81%3A0xe79f5278bc91490e!2sEgg%20Dome!5e0!3m2!1sja!2sjp!4v1724147752783!5m2!1sja!2sjp"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+  <nav class="fixed flex font-semibold bottom-8 w-full z-10 text-black">
+    <ul class="flex justify-self-center gap-2 md:gap-6 md:text-xl p-4 rounded-full shadow-lg backdrop-blur-md mx-auto">
+      <li><a class="hover:underline" href="/">ホーム</a></li>
+      <li><a class="hover:underline" href="/tamap">たまっぷ</a></li>
+      <li><a class="hover:underline" href="/schedule">活動内容</a></li>
+      <li><a class="hover:underline" href="/contact">お問い合わせ</a></li>
+    </ul>
+  </nav>
+  <script src="js/particle.js"></script>
+
 </body>
+
 </html>

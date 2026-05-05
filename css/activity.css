@@ -78,18 +78,11 @@ main {
   flex: 1;
 }
 
-ul {
-  list-style-type: none;
-  padding-left: 0;
-}
 
 li {
 
   transition: transform 0.3s ease;
 }
-
-
-
 
 .box-012 {
   max-width: 100%;
